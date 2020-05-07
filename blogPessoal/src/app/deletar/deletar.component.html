@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm mb-3" style="width: 18rem;">
+                <div class="d-flex justify-content-center">
+                    <img src="https://avatars0.githubusercontent.com/u/8118710?s=460&u=536b69e1851e9352fb7a978c4cc8f5a2e2bbeb59&v=4"
+                        class="card-img-top rounded-circle w-75 mt-3" alt="Imagem de perfil" />
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text-center">Gabriel Silva Lima</h5>
+                    <p class="card-text text-center">
+                        Estudante de front e back-end.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/limmagabriel/" class="btn btn-outline-info"
+                            target="_blank">LinkedIn</a>
+                        <a href="https://github.com/bielzin42" class="btn btn-outline-dark ml-2"
+                            target="_blank">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div>
+                <div>
+                    <h3 class="text-center mb-4 text-monospace">
+                        Deletar Postagem
+                    </h3>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title">{{ postagem.titulo }}</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"> {{ postagem.texto }} </p>
+                        <small class="form-text m-0 text-muted mb-3 text-monospace"> Postado em
+                            {{ postagem.data | date: 'dd/MM/yyyy'}} às {{ postagem.data | date: 'HH:mm'}} </small>
+
+                    </div>
+                </div>
+
+                <hr class="mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="text-center">Tem certeza que deseja apagar essa postagem?</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center mt-3 mb-3">
+                        <button class="btn btn-outline-success mr-3" (click)='btnSim()'>Sim</button>
+                        <button class="btn btn-outline-danger" (click)='btnNao()'>Não</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

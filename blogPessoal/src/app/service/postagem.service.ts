@@ -32,4 +32,8 @@ export class PostagemService {
 
   }
 
+  findByTitulo(titulo: string) {
+    return this.http.get(`http://31.220.57.14:8080/postagens/titulo/${titulo}`)
+  }
+
 }

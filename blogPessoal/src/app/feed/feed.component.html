@@ -21,8 +21,9 @@
           <hr class="mt-4 mb-4" />
           <h6 class="mb-3 text-monospace text-center">Pesquisar por título</h6>
           <div class="w-100 d-flex justify-content-center">
-            <input type="text" class="form-control mb-3 w-60 mr-1" placeholder="Pesquisar postagem..." />
-            <button class="btn btn-outline-success botaohei">ok</button>
+            <input type="text" class="form-control mb-3 w-60 mr-1" placeholder="Pesquisar postagem..."
+              [(ngModel)]="titulo" />
+            <button class="btn btn-outline-success botaohei" (click)=pesquisarPorTitulo()>ok</button>
           </div>
         </div>
       </div>
